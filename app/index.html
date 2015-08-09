@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>yesbrewnein_yeoman</title>
+    <title>yesBREWnein - A Homebrewing Contradiction</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -17,69 +17,169 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body>
     <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">yesbrewnein_yeoman</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-          
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-          
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-          
+    <div class="wrap_all container-fluid">
+      <div id="header" class="container">
+        <div class="header_icon_wrapper">
+          <img class="header_icon" src="images/header_icon.png"/>
+        </div>
+        <div class="header_text_wrapper">
+          <h1 class="header_text">YES <span class="header_bold">BREW </span>NEIN</h1>
+          <h3 class="sub_header_text">A Homebrewing Contradiction</h3>
         </div>
       </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+      <div id="main" class="container">
+        <div id="introduction">
+          <h3 class="bold">Welcome</h3>
+          <p>
+            Hi, my name is Max and I'm a homebrewer from Potsdam, Germany. With this site I'm trying to keep
+            track of my homebrewing efforts. I started brewing in late 2014, trying to make beer that is
+            drinkable but also different from the usual German macro beers. Below you
+            find a list of all the brews that I made so far; each with a description of the ingredients
+            I used and some tasting notes.<br>
+            To better characterize my beers, I try to give them a meaningful name and design a label which reflects the color,
+            style, and/or ingredients of the beer.
+            Since there are so many styles to brew, I usually try not to make the same beer twice but maybe I 
+            re-brew a beer if it needed a bit of refinement. I'm planning to store my recipes at <a class="bold" target="_blank" href="http://brewgr.com/!/yesBREWnein">brewgr</a>
+            which is a nice way of keeping track and making them open source.
+          </p>
+        </div>
+        <div id="the_beers">
+          <h3>The Brews</h3>
+          <ul class="beer_list">
+            <li class="beer_list_item">
+              <div class="beer_list_item_container">
+                <div class="beer_list_item_icon_container">
+                  <img class="beer_list_item_icon" src="images/hop_two_four_three_icon.png"/>
+                </div>
+                <div class="beer_list_item_text_container">
+                  <h4 class="beer_list_item_title">Hop Two Four Three <span class="right-aligned">#1</span></h4>
+                  <p class="beer_list_item_description">
+                    This was my first ever homebrew. Planned as a hoppy american amber ale, it turned out
+                    more ruby than amber. It was brewed with light and amber liquid malt extract and
+                    four different hops: Polaris, Nugget, Willamette, and Saphir; targeting 70 IBU which was a
+                    bit too much. I additionally dry-hopped it with Polaris and Willamette.
+                    Starting out with dry yeast, I used Nottingham ale yeast for a fruity fermentation.<br>
+                    The taste turned out to be quite malty with a fruity hop character at the beginning and
+                    a long lasting bitter finish. There was no minty hop character from Polaris at all, but
+                    this could have been caused by using too many hop varieties.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="beer_list_item">
+              <div class="beer_list_item_container">
+                <div class="beer_list_item_icon_container">
+                  <img class="beer_list_item_icon" src="images/umbus_rillo_num_icon.png"/>
+                </div>
+                <div class="beer_list_item_text_container">
+                  <h4 class="beer_list_item_title">Umbus Rillo Num <span class="right-aligned">#2</span></h4>
+                  <p class="beer_list_item_description">
+                    As an IPA seemed too intimidating for my second try, I went for an American Pale Ale with
+                    a triple hop combination of Columbus, Amarillo&reg;, and Ahtanum&trade; with a target of 60 IBU.
+                    For the malt base I used extra light dry malt extract and light liquid malt extract. To enhance the
+                    taste and to advance my brewing process, I used Maris Otter pale ale as a steeping addition.
+                    For fermentation I used Mangrove Jack's London Ale dry yeast.<br>
+                    The beer turned out deep golden with a citrussy and floral aroma. The malt character was more
+                    subtle than for brew #1, creating a slighter body. The carbonation was a bit
+                    strong without being a Hefeweizen or Belgian Wit. The finish was hoppy and bitter but not as
+                    long lasting as for brew #1.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="beer_list_item">
+              <div class="beer_list_item_container">
+                <div class="beer_list_item_icon_container">
+                  <img class="beer_list_item_icon" src="images/cmon_cali_icon.png"/>
+                </div>
+                <div class="beer_list_item_text_container">
+                  <h4 class="beer_list_item_title">C'mon Cali <span class="right-aligned">#3</span></h4>
+                  <p class="beer_list_item_description">
+                    Brew #1 was all extract. Brew #2 was extract with grains. So, brew #3 had to be all-grain
+                    to follow the scheme. After brewing two ales, I also wanted to make a lager. California
+                    Common was the obvious choice as I can ferment it at nearly room temperature. Following this
+                    simple beer style, I used 90% pale ale malt and 10% medium caramel malt. The hopping was done
+                    using only German Northern Brewer with a target of 35 IBU. For fermentation I made a starter from
+                    a pack of Wyeast 2112.<br>
+                    Brew #3 turned out to be a reddish copper colored, malty, and moderately hopped lager with
+                    a slightly fruity aroma. Building up carbonation took a lot of time, but after around two
+                    month, the mouthfeel was great.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="beer_list_item">
+              <div class="beer_list_item_container">
+                <div class="beer_list_item_icon_container">
+                  <img class="beer_list_item_icon" src="images/melon_catcher_in_the_dark_icon.png"/>
+                </div>
+                <div class="beer_list_item_text_container">
+                  <h4 class="beer_list_item_title">Melon Catcher in the Dark <span class="right-aligned">#4</span></h4>
+                  <p class="beer_list_item_description">
+                    A Cascadian Dark Ale made with rye for a slight spicyness and Hull Melon for a
+                    melon-like hop aroma. That was the premise for brew #4. For the malt base I used 
+                    85% pale ale malt and 8% rye malt accompanied by 3% of CaraMunich II and 4% dehusked
+                    Carafa II malt for a rich body and a nice dark color without being overly roasty. I hopped
+                    with German Magnum, Cascade, and Hull Melon for a citrussy and honeydew melon aroma
+                    with a target of 65 IBU. For fermentation I used WLP001.<br>
+                    I aimed for an OG of 1.070 but unfortunately the malt was not properly crushed, so
+                    I ended up with 1.050 OG. The final beer had 1.012 which leads to around Alc. 4.9% Vol. Hence,
+                    it was more a session version of a Cascadian Dark Ale. The beer has a nice dark, almost
+                    opaque color with ruby accents. The body is quite balanced with a nice mouthfeel and
+                    a fruity aroma with hints of roastiness. Unfortunately there is no melon aroma at all.
+                    It's more a mixture of citrus and strawberry which the Hull Melon is also known for. The
+                    finish is heavily hoppy but not overwhelming.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="why">
+          <h3 class="bold"> Why I began homebrewing </h3>
+          <p>
+            When I visited New York in 2014, I learned that beer can be more than Pilsener,
+            Dortmunder Export, and Hefeweizen. After I tried american pale ales and vienna lagers, I was
+            instantly hooked by the rich taste in comparison to boring, bland tasting German macro beer.
+            Back in Germany, I did a bit of investigation and discovered a whole world of beer styles like brown ales,
+            porters, IPAs, imperial stouts, or barleywines. And the best thing is that you can actually
+            make these at home, and there are tons of information available about homebrewing.<br>
+            Although there are German books about brewing, I started reading <a class="bold" target="_blank" href="http://howtobrew.com/intro.html">How to Brew</a>
+            because Germans tend to overcomplicate things especially when explaining something technical like brewing that has
+            such a long tradition in Germany. Since I don't like prebuilt things
+            that I can't modify, I didn't go for the usual pre-hopped beer kit. Instead, I bought some malt
+            extracts and hops and tried to make a beer which a bit more of my own.<br>
+            After I made my first two badges based on malt extract, I wanted to do something more interesting
+            and so I went for all-grain. Since a Braumeister was too expensive, I build a mash-lauter-tun from
+            a camping cooler with a copper manifold. For making a yeast starter, I build a stir-plate
+            from a wooden box, a PC-case fan, and a magnet from an old hard drive. There is a lot to learn
+            from American homebrewers when it comes to equipment. My brewing efficiency so far is about
+            60% which still leaves some room for improvement.
+          </p>
+        </div>
+      </div>
+      <div id="footer" class="container">
+        <p>
+          &copy; Max Noja. All rights reserved.
+        </p>
       </div>
     </div>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
@@ -94,7 +194,7 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
