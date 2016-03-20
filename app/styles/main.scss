@@ -31,9 +31,26 @@ $icon-font-path: '../fonts/';
        url('../fonts/merriweathersans-extrabold.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('../fonts/opensans-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/opensans-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/opensans-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensans-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/opensans-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../fonts/opensans-bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/opensans-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/opensans-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensans-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/opensans-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
 // fonts
-$sans-serif-font: "MerriweatherSansRegular", Helvetica, Arial, sans-serif;
-$sans-serif-bold-font: "MerriweatherSansExtraBold", Helvetica, Arial, sans-serif;
+$sans-serif-font: "OpenSansRegular", Helvetica, Arial, sans-serif;
+$sans-serif-bold-font: "OpenSansBold", Helvetica, Arial, sans-serif;
 $serif-font: "MerriweatherRegular", Times, serif;
 
 .browserupgrade {
