@@ -31,6 +31,11 @@ $icon-font-path: '../fonts/';
        url('../fonts/merriweathersans-extrabold.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
+// fonts
+$sans-serif-font: "MerriweatherSansRegular", Helvetica, Arial, sans-serif;
+$sans-serif-bold-font: "MerriweatherSansExtraBold", Helvetica, Arial, sans-serif;
+$serif-font: "MerriweatherRegular", Times, serif;
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -45,19 +50,19 @@ html, body {
 body {
   padding-top: 0px;
   padding-bottom: 0px;
-  font-family: "MerriweatherRegular", Times, serif
+  font-family: $serif-font;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: "MerriweatherSansRegular", Helvetica, Arial, sans-serif;
+    font-family: $sans-serif-font;
 }
 
 h4, .h4, h5, .h5, h6, .h6 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: "MerriweatherSansRegular", Helvetica, Arial, sans-serif;
+    font-family: $sans-serif-font;
 }
 
 p {
@@ -83,11 +88,11 @@ a, a:hover, a:active {
 
 /* Custom page header */
 #header {
-  font-family: "MerriweatherSansRegular", Arial, sans-serif;
+  font-family: $sans-serif-font;
 }
 
 .header_bold {
-  font-family: "MerriweatherSansExtraBold", Arial, sans-serif;
+  font-family: $sans-serif-bold-font;
   font-size: 100%;
 }
 /*
