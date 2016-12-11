@@ -41,6 +41,15 @@ $icon-font-path: '../fonts/';
 }
 
 @font-face {
+  font-family: 'OpenSansSemiBold';
+  src: url('../fonts/opensans-semibold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/opensans-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensans-semibold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/opensans-semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
   font-family: 'OpenSansBold';
   src: url('../fonts/opensans-bold.eot'); /* IE9 Compat Modes */
   src: url('../fonts/opensans-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -50,6 +59,7 @@ $icon-font-path: '../fonts/';
 }
 // fonts
 $sans-serif-font: "OpenSansRegular", Helvetica, Arial, sans-serif;
+$sans-serif-semi-bold-font: "OpenSansSemiBold", Helvetica, Arial, sans-serif;
 $sans-serif-bold-font: "OpenSansBold", Helvetica, Arial, sans-serif;
 $serif-font: "MerriweatherRegular", Times, serif;
 
@@ -113,17 +123,6 @@ a, a:hover, a:active {
   padding-bottom: 15px;
 }
 
-.header_bold {
-  font-family: $sans-serif-bold-font;
-  font-size: 100%;
-}
-/*
-.header_icon_wrapper {
-  height: 100%;
-  width: 25%;
-  float: left;
-}
-*/
 .header_icon {
   max-height: 180px;
   height: 180px;
@@ -131,15 +130,9 @@ a, a:hover, a:active {
   width: auto;
   display: block;
 }
-/*
-.header_text_wrapper {
-  height: 100%;
-  width: 40%;
-  min-width: 180px;
-  float:right;
-}
-*/
+
 h1.header_text {
+  font-family: $sans-serif-semi-bold-font;
   font-size: 4.25em;
   line-height: 0.85em;
   word-wrap: break-all;
@@ -237,7 +230,7 @@ h3.sub_header_text {
     background: #fff;
   }
   .header_icon {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   h1.header_text {
@@ -279,7 +272,7 @@ h3.sub_header_text {
 }
 
 @media screen and (min-width: 480px) {
-    h1.header_text {
+  h1.header_text {
     font-size: 3.5em;
   }
 
