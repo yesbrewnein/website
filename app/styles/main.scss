@@ -131,6 +131,17 @@ a, a:hover, a:active, a:visited {
   display: block;
 }
 
+.social_link {
+  float: right;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.social_icon {
+  width: 32px;
+  height: 32px;
+}
+
 h1.header_text {
   font-family: $sans-serif-semi-bold-font;
   font-size: 4.25em;
@@ -165,8 +176,8 @@ h3.sub_header_text {
   }
 }
 #introduction, #why {
+  margin-top: 15px;
   h3 {
-    margin-top: 15px;
     font-size: 1.5em;
   }
   p {
@@ -320,11 +331,15 @@ h3.sub_header_text {
   }
 
   #main {
-    padding: 15px 30px 30px;
+    padding: 0 30px 30px;
   }
 
   #footer {
     padding: 15px 30px 30px;
+  }
+
+  #the_beers, #why, #introduction {
+    padding-top: 15px;
   }
 }
 @media screen and (min-width: 992px) {
