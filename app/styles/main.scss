@@ -5,33 +5,6 @@ $icon-font-path: '../fonts/';
 // endbower
 
 @font-face {
-  font-family: 'MerriweatherRegular';
-  src: url('../fonts/merriweather-regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/merriweather-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/merriweather-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/merriweather-regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/merriweather-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-}
-
-@font-face {
-  font-family: 'MerriweatherSansRegular';
-  src: url('../fonts/merriweathersans-regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/merriweathersans-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/merriweathersans-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/merriweathersans-regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/merriweathersans-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-}
-
-@font-face {
-  font-family: 'MerriweatherSansExtraBold';
-  src: url('../fonts/merriweathersans-extrabold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/merriweathersans-extrabold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/merriweathersans-extrabold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/merriweathersans-extrabold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/merriweathersans-extrabold.ttf')  format('truetype'), /* Safari, Android, iOS */
-}
-
-@font-face {
   font-family: 'OpenSansRegular';
   src: url('../fonts/opensans-regular.eot'); /* IE9 Compat Modes */
   src: url('../fonts/opensans-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -61,7 +34,6 @@ $icon-font-path: '../fonts/';
 $sans-serif-font: "OpenSansRegular", Helvetica, Arial, sans-serif;
 $sans-serif-semi-bold-font: "OpenSansSemiBold", Helvetica, Arial, sans-serif;
 $sans-serif-bold-font: "OpenSansBold", Helvetica, Arial, sans-serif;
-$serif-font: "MerriweatherRegular", Times, serif;
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -69,29 +41,30 @@ $serif-font: "MerriweatherRegular", Times, serif;
   color: #000;
   padding: 0.2em 0;
 }
+
 html, body {
   min-width: 320px;
   color: #000;
   background: url("../images/bg.jpg") fixed no-repeat 50% 0%;
   background-size: cover;
 }
-/* Space out content a bit */
+
 body {
   padding-top: 0px;
   padding-bottom: 0px;
-  font-family: $serif-font;
+  font-family: $sans-serif-font;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: $sans-serif-font;
+    font-family: $sans-serif-bold-font;
 }
 
 h4, .h4, h5, .h5, h6, .h6 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: $sans-serif-font;
+    font-family: $sans-serif-bold-font;
 }
 
 p {
@@ -103,8 +76,9 @@ a, a:hover, a:active, a:visited {
 }
 
 .bold {
-  font-weight: bold;
+  font-family: $sans-serif-bold-font;
 }
+
 .wrap_all {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -115,8 +89,7 @@ a, a:hover, a:active, a:visited {
   padding-right: 15px;
 }
 
-/* Custom page header */
-#header {
+.header {
   font-family: $sans-serif-font;
   background-color: #fff;
   padding-top: 15px;
@@ -151,52 +124,50 @@ h1.header_text {
   vertical-align: top;
   text-align: right;
 }
-    /* Make the masthead heading the same height as the navigation */
+
 h3.sub_header_text {
+  font-family: $sans-serif-font;
   font-size: 1.5em;
   text-align: right;
 }
 
-#main {
+.main {
   margin-top: 15px;
   border-top: 1px solid #e5e5e5;
   background-color: #fff;
-  #the_beers {
-    margin-top: 15px;
-    h3 {
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-    .beer_list {
-      padding-left: 0px;
-      padding-right: 0px;
-      text-indent: 0px;
-      list-style-type: none;
-    }
-  }
 }
-#introduction, #why {
+
+.section {
   margin-top: 15px;
+
   h3 {
     font-size: 1.5em;
   }
+
+  h4 {
+    font-size: 1.25em;
+  }
+
   p {
-    font-size: 1em;
+    line-height: 1.5;
     text-align: justify;
   }
 }
+
+.beer_list {
+  padding-left: 0px;
+  padding-right: 0px;
+  text-indent: 0px;
+  list-style-type: none;
+}
+
 .beer_list_item_container {
   width: 100%;
   overflow: auto;
+
   img {
     max-width: 100%;
     width: 100%;
-  }
-  h4 {
-    font-weight: bold;
-  }
-  p {
-    text-align: justify;
   }
 }
 
@@ -206,6 +177,7 @@ h3.sub_header_text {
   position: relative;
   width: 25%;
 }
+
 .beer_list_item_text_container {
   padding: 15px 0px 0px 0px;
   float: left;
@@ -216,23 +188,23 @@ h3.sub_header_text {
 .right-aligned {
   float: right;
 }
-/* Custom page footer */
-#footer {
+
+.footer {
   margin-top: 15px;
   color: #000;
   background-color: #fff;
   border-top: 1px solid #e5e5e5;
 }
 
-#header {
+.header {
   padding: 30px;
 }
 
-#main {
+.main {
   padding: 15px 30px 30px;
 }
 
-#footer {
+.footer {
   padding: 15px 30px 30px;
 }
 
@@ -240,6 +212,7 @@ h3.sub_header_text {
   html, body {
     background: #fff;
   }
+
   .header_icon {
     margin-bottom: 20px;
   }
@@ -258,26 +231,28 @@ h3.sub_header_text {
     font-size: 1.2em;
     text-align: center;
   }
+
   .beer_list_item_icon_container {
     padding: 15px 0px 0px 0px;
     float: none;
     width: 100%;
   }
+
   .beer_list_item_text_container {
     padding: 15px 0px 0px 0px;
     float: left;
     width: 100%;
   }
 
-  #header {
+  .header {
     padding: 0px 15px;
   }
 
-  #main {
+  .main {
     padding: 0px 15px;
   }
 
-  #footer {
+  .footer {
     padding: 0px 15px;
   }
 }
@@ -297,6 +272,7 @@ h3.sub_header_text {
     position: relative;
     width: 45%;
   }
+
   .beer_list_item_text_container {
     padding: 15px 0px 0px 0px;
     float: left;
@@ -305,57 +281,56 @@ h3.sub_header_text {
     font-size: 80%;
   }
 }
+
 @media screen and (min-width: 640px) {
   .beer_list_item_icon_container {
     width: 33.33333%;
   }
+
   .beer_list_item_text_container {
     width: 66.66666%;
     font-size: 90%;
   }
 }
+
 @media screen and (min-width: 768px) {
   html, body {
     background: url("../images/bg.jpg") fixed no-repeat 50% 0%;
     background-size: cover;
   }
+
   .beer_list_item_icon_container {
     width: 25%;
   }
+
   .beer_list_item_text_container {
     width: 75%;
     font-size: 100%;
   }
-  #header {
+
+  .header {
     padding: 30px;
   }
 
-  #main {
+  .main {
     padding: 0 30px 30px;
   }
 
-  #footer {
+  .footer {
     padding: 15px 30px 30px;
   }
 
-  #the_beers, #why, #introduction {
+  .section {
     padding-top: 15px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .container {
     max-width: 800px;
   }
-  h3 {
-    font-size: 105%;
-  }
-  .beer_list_item_text_container {
-    font-size: 105%;
-  }
-  #introduction {
-    font-size: 105%;
-  }
-  #why {
+
+  .section {
     font-size: 105%;
   }
 }
@@ -364,16 +339,8 @@ h3.sub_header_text {
   .container {
     max-width: 1000px;
   }
-  h3 {
-    font-size: 110%;
-  }
-  .beer_list_item_text_container {
-    font-size: 110%;
-  }
-  #introduction {
-    font-size: 110%;
-  }
-  #why {
+
+  .section {
     font-size: 110%;
   }
 }
